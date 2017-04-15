@@ -4,9 +4,6 @@ import MovieList from './MovieList'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 var injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();
-// import Footer from './Footer'
-// import AddTodo from '../containers/AddTodo'
-// import VisibleTodoList from '../containers/VisibleTodoList'
 
 const styles = {
   addLeft: {

@@ -37,16 +37,16 @@ class MovieList extends Component {
       <GridList cols={3}>
         <Subheader>Movies</Subheader>
         {this.props.movieList.map((movie) => (
-        <GridTile
-          key={movie.id}
-          title={movie.title}
-          titleStyle="height 30%"
-          subtitle={<span><b>{movie.year}<br/>{movie.rating}</b></span>}
-          actionIcon={<IconButton onClick={(e) => this.props.deleteMovie(movie.id)}><Delete color="white" /></IconButton>}
-        >
-        <img src='https://image.freepik.com/free-vector/cartoon-movie-projector_23-2147509100.jpg' alt='' />
-        </GridTile>
-      ))}
+          <GridTile
+            key={movie.id}
+            title={movie.title}
+            titleStyle="height 30%"
+            subtitle={<span><b>{movie.year}<br/>{movie.rating}</b></span>}
+            actionIcon={<IconButton onClick={(e) => this.props.deleteMovie(movie.id)}><Delete color="white" /></IconButton>}
+          >
+          <img src='https://image.freepik.com/free-vector/cartoon-movie-projector_23-2147509100.jpg' alt='' />
+          </GridTile>
+        ))}
       </GridList>
       </div>
     );
